@@ -25,6 +25,9 @@ const Banner = () => {
 
   return (
     <div className="p-4">
+       <div>
+            <h2 className="text-4xl text-center font-semibold my-4">Our Gallary</h2>
+        </div>
       {/* full carosal is inside this div */}
       <div className="carousel w-full overflow-hidden relative rounded-lg ">
 
