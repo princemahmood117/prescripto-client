@@ -14,7 +14,7 @@ const Profile = () => {
 
   const [role, isLoading] = useRole()
 
-  console.log(user)
+  // console.log(user)
 
   if (isLoading || loading) return <LoadingSpinner />
   return (

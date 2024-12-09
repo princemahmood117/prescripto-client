@@ -24,7 +24,7 @@ const GuestMenu = () => {
    }
  
    const modalHandler = async () => {
-     console.log('I want to be a host');
+    //  console.log('I want to be a host');
      
      try {
        const currentUser = {
@@ -33,7 +33,7 @@ const GuestMenu = () => {
          status : 'Requested',
        }
        const {data} = await axiosSecure.put(`/user`,currentUser)
-       console.log(data);
+      //  console.log(data);
        if(data.modifiedCount > 0) {
          toast.success('successfull, wait for admin confirmation')
        }
@@ -42,7 +42,7 @@ const GuestMenu = () => {
        }
      }
      catch(error) {
-       console.log(error);
+      //  console.log(error);
        toast.error(error.message) 
      }
      finally {

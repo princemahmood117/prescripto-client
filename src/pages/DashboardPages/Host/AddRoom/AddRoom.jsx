@@ -26,7 +26,7 @@ const AddRoom = () => {
 
 // function for calender
 const handleDates = (item) => {
-    console.log(item);
+    // console.log(item);
     setDates(item.selection)
 }
 
@@ -38,7 +38,7 @@ const {mutateAsync} = useMutation({
     return data
   },
   onSuccess : () => {
-    console.log('data saved successfully');
+    // console.log('data saved successfully');
     toast.success("Rooms added successfully")
     setLoading(false)
     navigate('/dashboard/my-listings')
@@ -83,7 +83,7 @@ const handleAddRoom = async(e) => {
    }
 
    catch (error){
-    console.log(error);
+    // console.log(error);
     toast.error("There is some error adding room")
     setLoading(false)
    }

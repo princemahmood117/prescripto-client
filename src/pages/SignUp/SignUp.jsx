@@ -40,7 +40,7 @@ const SignUp = () => {
       // 2. user registration
 
       const registration = await createUser(email,password)
-      console.log(registration);
+      // console.log(registration);
 
 
       // 2. save user name and photo in firebase
@@ -56,7 +56,7 @@ const SignUp = () => {
     catch (error) {
       setLoading(false)
       toast.error(error.message)
-      console.log(error);
+      // console.log(error);
     }
     
   }
@@ -74,7 +74,7 @@ const SignUp = () => {
 
     catch (error) {
       setLoading(false)
-      console.log(error);
+      // console.log(error);
     }
 
   }

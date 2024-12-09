@@ -19,7 +19,7 @@ const MyListings = () => {
     }
     
   })
- console.log(rooms);
+//  console.log(rooms);
 
 //  delete
  const {mutateAsync} = useMutation({
@@ -28,7 +28,7 @@ const MyListings = () => {
     return data
   },
   onSuccess : (data) => {
-    console.log(data);
+    // console.log(data);
     toast.success("Room deleted successfully")
     refetch()
   }
@@ -39,11 +39,11 @@ const MyListings = () => {
  const handleDelete = async(id) => {
 
   try {
-    console.log(id);
+    // console.log(id);
     await mutateAsync(id)
   }
   catch (error) {
-    console.log(error);
+    // console.log(error);
   }
 
  }

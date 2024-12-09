@@ -21,7 +21,7 @@ const ManageBookings = () => {
     
   })
 
-  console.log(bookings);
+  // console.log(bookings);
   
   if (isLoading) return <LoadingSpinner/>
   return (

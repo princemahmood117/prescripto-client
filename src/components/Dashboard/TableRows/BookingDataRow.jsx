@@ -21,7 +21,7 @@ const BookingDataRow = ({ booking, refetch }) => {
       return data
     },
     onSuccess : async(data) => {
-      console.log(data);
+      // console.log(data);
       refetch()
       toast.success("Booking Canceled")
 
@@ -38,11 +38,11 @@ const BookingDataRow = ({ booking, refetch }) => {
    const handleDelete = async(id) => {
   
     try {
-      console.log(id);
+      // console.log(id);
       await mutateAsync(id)
     }
     catch (error) {
-      console.log(error);
+      // console.log(error);
     }
   
    }

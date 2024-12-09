@@ -22,7 +22,7 @@ const HostStatistics = () => {
     })
   
     if(isLoading) return <LoadingSpinner></LoadingSpinner>
-    console.log(statData);
+    // console.log(statData);
 
   return (
     <div>

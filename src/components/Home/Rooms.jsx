@@ -39,7 +39,7 @@ const Rooms = () => {
         <div className='flex items-center justify-center min-h-[calc(100vh-300px)]'>
           <Heading
             center={true}
-            title='No Rooms Available In This Category!'
+            title='No Doctors available at this moment'
             subtitle='Please Select Other Categories.'
           />
         </div>

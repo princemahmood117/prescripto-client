@@ -20,7 +20,7 @@ const AdminStatistics = () => {
   })
 
   if(isLoading) return <LoadingSpinner></LoadingSpinner>
-  console.log(statData);
+  // console.log(statData);
 
   
   return (

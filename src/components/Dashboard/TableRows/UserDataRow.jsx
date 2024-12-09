@@ -23,7 +23,7 @@ const UserDataRow = ({ user, refetch }) => {
         },
         onSuccess : (data) => {
             refetch()
-            console.log(data);
+            // console.log(data);
             toast.success("User role updated successfully")
             setIsOpen(false)
            
@@ -47,7 +47,7 @@ const UserDataRow = ({ user, refetch }) => {
             await mutateAsync(userRole)
         }
         catch (error) {
-            console.log(error);
+            // console.log(error);
             toast.error(error.message)
         }
      

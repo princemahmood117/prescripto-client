@@ -30,7 +30,7 @@ const RoomReservation = ({ room, refetch }) => {
 
   // const totalPrice = room?.price
 
-  console.log(totalPrice);
+  // console.log(totalPrice);
   return (
     <div className="rounded-xl border-[1px] border-neutral-200 overflow-hidden bg-white">
       <div><p className="text-xl px-2 py-3 text-center">Available date</p></div>
@@ -42,7 +42,7 @@ const RoomReservation = ({ room, refetch }) => {
           rangeColors={["#F43F5E"]}
           editableDateInputs={true}
           onChange={(item) => {
-            console.log(item);
+            // console.log(item);
             setState([
               {
                 startDate: room.from,

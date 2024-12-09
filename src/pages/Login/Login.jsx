@@ -38,7 +38,7 @@ const Login = () => {
     catch (error) {
       setLoading(false)
       toast.error(error.message)
-      console.log(error);
+      // console.log(error);
     }
     
   }
@@ -57,7 +57,7 @@ const Login = () => {
     catch(error) {
       setLoading(false)
       toast.error(error.message)
-      console.log(error);
+      // console.log(error);
     }
    
   }

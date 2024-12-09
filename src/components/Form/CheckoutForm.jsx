@@ -35,7 +35,7 @@ const CheckoutForm = ({ closeModal, bookingInfo, refetch }) => {
   // get client secret from server
   const getClientSecret = async (price) => {
     const { data } = await axiosSecure.post(`/create-payment-intent`, price);
-    console.log("client secret from server", data);
+    // console.log("client secret from server", data);
     setClientSecret(data.clientSecret);
   };
 
@@ -67,14 +67,14 @@ const CheckoutForm = ({ closeModal, bookingInfo, refetch }) => {
     });
 
     if (error) {
-      console.log("[error]", error);
+      // console.log("[error]", error);
       setCardError(error.message);
       setProcessing(false)
       return;
     } 
 
     else {
-      console.log("[PaymentMethod]", paymentMethod);
+      // console.log("[PaymentMethod]", paymentMethod);
       setCardError("");
     }
 
@@ -91,7 +91,7 @@ const CheckoutForm = ({ closeModal, bookingInfo, refetch }) => {
     });
 
     if(confirmError) {
-        console.log(confirmError);
+        // console.log(confirmError);
         setCardError(confirmError.message)
         setProcessing(false)
         return
@@ -99,7 +99,7 @@ const CheckoutForm = ({ closeModal, bookingInfo, refetch }) => {
 
 
     if(paymentIntent.status === 'succeeded') {
-        console.log(paymentIntent);
+        // console.log(paymentIntent);
         // 1. create payment info object (time, trax:id)
 
         const paymentInfo = {
@@ -110,7 +110,7 @@ const CheckoutForm = ({ closeModal, bookingInfo, refetch }) => {
         }
         delete paymentInfo._id
 
-        console.log(paymentInfo);
+        // console.log(paymentInfo);
 
        
 
@@ -119,7 +119,7 @@ const CheckoutForm = ({ closeModal, bookingInfo, refetch }) => {
         // 2. save payment info into database in a collection
 
         const {data} = await axiosSecure.post('/booking',paymentInfo)
-        console.log(data);
+        // console.log(data);
 
         // 3. change 'Booked' room status in db 
 
@@ -134,7 +134,7 @@ const CheckoutForm = ({ closeModal, bookingInfo, refetch }) => {
         navigate('/dashboard/my-bookings')
         }
         catch(err) {
-            console.log(err);
+            // console.log(err);
         }
     }
 

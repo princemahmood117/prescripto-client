@@ -1,16 +1,5 @@
 const Contact = () => {
 
-    const handleContactSubmit = (e) => {
-        e.preventDefault()
-
-        const form = e.target;
-        const firstName = form.firstName.value;
-        const lastName = form.lastName.value;
-        const email = form.email.value;
-        const textBody = form.textBody.value;
-
-        console.log(firstName,lastName,email,textBody);
-    }
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="container px-6 py-12 mx-auto">
@@ -160,7 +149,7 @@ const Contact = () => {
           </div>
 
           <div className="p-4 py-6 rounded-lg bg-gray-50 dark:bg-gray-800 md:p-8">
-            <form onSubmit={handleContactSubmit}>
+            <form>
               <div className="-mx-2 md:items-center md:flex">
                 <div className="flex-1 px-2">
                   <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
