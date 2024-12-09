@@ -73,13 +73,13 @@ const Navbar = () => {
                 <div className="hidden md:block">
                   {/* {!user && ( */}
 
-                    <button
+                    {/* <button
                     onClick={()=> setIsModalOpen(true)}
                       disabled={!user}
                       className="disabled:cursor-not-allowed cursor-pointer hover:bg-neutral-100 py-3 px-4 text-sm font-semibold rounded-full  transition"
                     >
                       Be a host
-                    </button>
+                    </button> */}
 
                   {/* )} */}
                 </div>
